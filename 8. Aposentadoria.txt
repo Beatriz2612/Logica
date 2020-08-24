@@ -1,0 +1,35 @@
+Algoritmo "aposentadoria"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+     nome, sexo : caractere
+     idade, maiorf, maiorm : inteiro
+
+Inicio
+       escreval (" Escreva seu nome: ")
+       leia (nome)
+       escreval (" ", nome, ", informe sua idade: ")
+       leia (idade)
+       
+ se  idade < 18 entao
+       escreval (nome, ", você ainda é muito novo!")
+       fimalgoritmo
+
+fimse
+
+       escreval (" Informe seu sexo (feminino/masculino) em letras minúsculas: ")
+       leia (sexo)
+
+ maiorf <-  62 - idade
+ maiorm <-  65 - idade
+
+ se(sexo = "feminino") ENTAO
+        escreval (nome, ", ainda faltam", maiorf, " anos para você se aposentar!")
+       
+ senao
+        escreval (nome, ", ainda faltam" , maiorm, " anos para você se aposentar!")
+ 
+fimse
+
+Fimalgoritmo

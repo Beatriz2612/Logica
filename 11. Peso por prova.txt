@@ -1,0 +1,29 @@
+Algoritmo "semnome"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+
+Var
+    atv1, atv2, atv3, media: real
+ //atv1 tem peso 2, atv2 tem peso 3 e atv3 tem peso 5
+
+Inicio
+        escreva ("Informe a nota da prova 1: ")
+        leia (atv1)
+        escreva ("Informe a nota da prova 2: ")
+        leia (atv2)
+        escreva ("Informe a nota da prova 3: ")
+        leia (atv2)
+
+// a média seria a soma das 3 notas multiplicadas
+// pelos respectivos pesos e dividida pela Soma dos pesos.
+
+        
+media <- (atv1 *2+ atv2 *3+ atv3 *5) / 10
+
+ escreva ("Sua média em matemática é: ", media)
+ 
+
+
+
+Fimalgoritmo

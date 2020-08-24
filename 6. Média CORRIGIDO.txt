@@ -1,0 +1,74 @@
+Algoritmo "teste"
+//
+Var
+     p1, p2, p3, p4 : real
+     media, final, faltas  : real
+
+Inicio
+
+       
+ escreva (" digite a nota da 1° avaliação: ")
+ leia (p1)
+ escreva (" digite a nota da 2° avaliação: ")
+ leia (p2)
+ escreva (" digite a nota da 3³ avaliação: ")
+ leia (p3)
+ escreva (" digite a nota da 4° avaliação: ")
+ leia (p4)
+ 
+                            escreval("")
+ 
+       media <- (p1 + p2 + p3 + P4) / 4
+       escreval  (" A média do aluno foi de:" , media)
+       
+       
+// Se a média for menor que  5 o aluno está automamaticamente
+// reprovado independente do n° de faltas
+
+
+ se (media < 5) entao
+ escreval (" O aluno foi reprovado!")
+ 
+ fimalgoritmo
+ fimse
+
+
+ // Se a média superar o valor "5" irá entrar na condição de faltas
+ 
+ // Se o aluno tiver 10 ou mais faltas ele estará reprovado
+
+                            escreval("")
+
+escreva("Informe a quantidade de faltas: ")
+leia (faltas)
+
+
+// Se o aluno tiver menos de 10 faltas será analisado sua média
+// para saber se ele foi aprovado ou se estará de recuperação.
+
+                            escreval("")
+
+
+ se (media >= 7) e (faltas <10)  entao
+ escreval (" O aluno foi aprovado!")
+ 
+ Fimalgoritmo
+ fimse
+ 
+ se (media >7) e (faltas >= 10)  entao
+ escreval ("O aluno foi reprovado!")
+ 
+Fimalgoritmo
+fimse
+
+ se (media >=5) ou (media<7) e (faltas < 10) entao
+ escreval ("O aluno está de recuperação!")
+ 
+ Fimalgoritmo
+ fimse
+ 
+ se (media >=5) ou (media >7) e (faltas >= 10)  entao
+ escreval ("O aluno está reprovado!")
+ 
+ Fimalgoritmo
+ fimse

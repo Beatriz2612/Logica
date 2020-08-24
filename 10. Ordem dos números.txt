@@ -1,0 +1,16 @@
+Algoritmo "ordemdosnumeros"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+     numA, numB : real
+
+Inicio
+       escreva (" Digite o primeiro número: ")
+       leia (numA)
+       escreva (" Digite o segundo número:")
+       leia (numB)
+
+escreva(" Você digitou:" , numB, " e", numA , ".")
+
+Fimalgoritmo

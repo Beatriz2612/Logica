@@ -1,0 +1,22 @@
+Algoritmo "maioroumenor"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+    n1, n2 : real
+
+Inicio
+       escreva (" Informe um número: ")
+       leia (n1)
+       escreva (" Informe um número: ")
+       leia (n2)
+
+se n1 > n2 entao
+escreval ("o número " , n1,  " é  maior e o número " , n2 , " é menor")
+
+senao
+escreval ("o número " , n1, " é menor e o número " , n2 , " é maior")
+
+fimse
+
+Fimalgoritmo

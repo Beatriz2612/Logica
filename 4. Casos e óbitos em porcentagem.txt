@@ -1,0 +1,59 @@
+Algoritmo "semnome"
+
+Var
+paises : vetor [0..14] de caractere
+    casos : vetor [0..14] de inteiro
+    obitos: vetor [ 0..14] de inteiro
+    contador: inteiro
+    mediacasos, mediaobitos , soma1, porcentagem: real
+    mediana_casos, mediana_obitos, soma2 : real
+    i : inteiro
+
+Inicio
+            escreval ("Informe os dados em ordem decrescente!")
+
+para contador de 0 ate 14 faca
+
+   escreva("Digite o nome do país: ")
+   leia(paises[contador])
+   escreva("Digite o número de casos: ")
+   leia(casos[contador])
+   escreva("Digite o número de óbitos: ")
+   leia(obitos[contador])
+
+fimpara
+
+para contador de 0 ate 14 faca
+
+   escreval("País: ", paises[contador]," - casos: ", casos[contador], " - obitos: ", obitos[contador])
+
+fimpara
+
+soma1 <-0
+soma1 <- soma1 + casos[contador]
+
+soma2 <-0
+soma2 <- soma2 + obitos[contador]
+
+mediacasos <- soma1 / 15
+
+mediaobitos <- soma2 / 15
+
+   escreval ("  A média de casos é: ", mediacasos)
+
+   escreval ("   A média de óbitos é: ", mediaobitos)
+
+mediana_casos <- casos [7]
+
+mediana_obitos <- obitos [7]
+
+   escreval ("    A mediana de casos é: ", mediana_casos)
+
+   escreval ("     A mediana de óbitos é: ", mediana_obitos)
+   
+porcentagem <-(soma2 * 100)/soma1
+
+escreval("")
+escreva ("A porcentagem entre número de casos e o númro de óbitos é: ", porcentagem, "%")
+
+Fimalgoritmo

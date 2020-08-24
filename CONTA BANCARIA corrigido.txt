@@ -1,0 +1,54 @@
+Algoritmo "contabancaria"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+    nconta, saldo,  valoroperacao1, somad, subtrar : real
+    toperacao: caractere
+    
+Inicio
+
+       escreva ("Informe o número da sua conta bancaria: ")
+       leia (nconta)
+       escreva ("Informe o saldo disponivel da sua conta: ")
+       leia (saldo)
+       escreval ("Insira em letras minúsculas e sem pontuação, ")
+       escreval ("qual o tipo de operação deseja (deposito ou retirada)? ")
+       leia (toperacao)
+       escreva ("E qual o valor da operação? ")
+       leia (valoroperacao1)
+       
+somad <-   (saldo + valoroperacao1)
+subtrar <- (saldo - valoroperacao1)
+
+ se (toperacao = "deposito") entao
+      escreval("Seu saldo foi atualizado para ", somad, " reais")
+      
+ senao
+      escreval ("Seu saldo foi atualizado para ", subtrar, " reais")
+      
+fimse
+
+ se (toperacao = "deposito") e (somad >= 0)  entao
+     escreva ("Operação finalizada!")
+
+ fimalgoritmo
+ 
+ fimse
+     
+ se (toperacao = "deposito") ou (somad <= 0 ) entao
+     escreva ("Conta estourada!")
+
+fimalgoritmo
+
+fimse
+
+ se  (valoroperacao1 > saldo) entao
+     escreval ("Conta estourada!")
+ 
+ senao (valoroperacao1 < saldo)  entao
+     escreval ("Operação finalizada!")
+
+fimse
+
+fimalgoritmo

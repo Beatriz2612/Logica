@@ -1,0 +1,25 @@
+Algoritmo "km em ms"
+
+// Aluno(a): Beatriz S. Oliveira - Equipe 3
+
+Var
+     veloemkm, veloemMS, tempo1 : real
+
+Inicio
+
+ // De km/h para m/s = divide por 3,6
+// 1 hora equivale a 3.600 segundos
+// De São Paulo até o Rio de Janeiro = 434,4 km
+
+        escreva ("Informe a velocidade em km: ")
+        leia (veloemkm)
+
+veloemMS <- veloemkm / 3.600
+
+        escreval ("  O velocidade em m/s será de: ", veloemms )
+        
+tempo1 <- 434.400 / veloemkm
+
+        escreval ("  E o tempo de São Paulo até o Rio de Janeiro é: ", tempo1 , "h/m")
+
+Fimalgoritmo

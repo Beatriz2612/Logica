@@ -1,0 +1,19 @@
+Algoritmo "semnome"
+// 
+
+Var
+    numero : vetor [1..20] de inteiro
+    cont : inteiro
+
+Inicio
+
+
+Para cont de 1 ate 20 faca
+escreval ("Número: ")
+leia (numero[cont])
+
+fimpara
+
+
+
+Fimalgoritmo

@@ -1,0 +1,29 @@
+Algoritmo "temperatura"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+    temperatura :real
+    condicao : caractere
+    
+Inicio
+
+enquanto (condicao <> "nao") faca
+
+
+       escreva(" Informe a temperatura ambiente: ")
+       leia (temperatura)
+
+ se temperatura < 25 entao
+    escreval(" Está agradável!")
+fimse
+
+ se temperatura >= 25 entao
+    escreval (" Está muito quente!")
+fimse
+
+ Escreval ("Deseja realizar uma nova verificacao de temperatura? ")
+       leia (condicao)
+
+fimenquanto
+fimalgoritmo

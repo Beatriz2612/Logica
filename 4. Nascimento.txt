@@ -1,0 +1,39 @@
+Algoritmo "semnome"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+    nas1, nas2 ,idadeaprox1, idadeaprox2   : inteiro
+                             nome1, nome2  : caractere
+Inicio
+         escreva (" Informe o nome da primeira pessoa: ")
+         leia (nome1)
+         escreva (" Informe o ano do nascimento de ", nome1, ": ")
+         leia (nas1)
+         escreva (" Informe o nome da segunda pessoa: ")
+         leia (nome2)
+         escreva (" Informe o ano do seu nascimento de ", nome2, ": ")
+         leia (nas2)
+       
+ idadeaprox1 <- (2020 - nas1)
+ 
+         escreval (nome1, " tem", idadeaprox1, " pois nasceu em", nas1)
+       
+ idadeaprox2 <- (2020 - nas2)
+
+         escreval (nome2, " tem", idadeaprox2, " pois nasceu em", nas2)
+ 
+ se idadeaprox1 > idadeaprox2 entao
+         escreva (nome2, " é mais novo(a) que ", nome1)
+  fimse
+  
+ se idadeaprox1 < idadeaprox2 entao
+         escreva (nome1, " é mais novo(a) que ", nome2)
+  fimse
+  
+ se idadeaprox1 = idadeaprox2 entao
+         escreva ("Ambos tem a mesma idade")
+
+ fimse
+
+Fimalgoritmo

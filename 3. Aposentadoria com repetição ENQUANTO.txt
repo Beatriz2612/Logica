@@ -1,0 +1,51 @@
+Algoritmo "aposentadoria"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+     nome, sexo, condicao : caractere
+     idade, maiorf, maiorm : inteiro
+
+Inicio
+
+ enquanto (condicao <> "nao") faca
+ 
+       escreval (" Escreva seu nome: ")
+       leia (nome)
+       escreval (" ", nome, ", informe sua idade: ")
+       leia (idade)
+
+ se  idade < 18 entao
+       escreval (nome, ", você ainda é muito novo!")
+       escreval("")
+       
+Escreval ("Deseja realizar uma nova verificacao de aposentadoria? ")
+       leia (condicao)
+fimse
+
+se idade >= 18 entao
+
+       escreval (" Informe seu sexo (feminino/masculino) em letras minúsculas: ")
+       leia (sexo)
+
+ maiorf <-  62 - idade
+ maiorm <-  65 - idade
+
+ se(sexo = "feminino") ENTAO
+        escreval (nome, ", ainda faltam", maiorf, " anos para você se aposentar!")
+        escreval("")
+fimse
+
+ se (sexo = "masculino") entao
+        escreval (nome, ", ainda faltam" , maiorm, " anos para você se aposentar!")
+        escreval("")
+
+fimse
+
+         Escreval ("Deseja realizar uma nova verificação de aposentadoria? ")
+       leia (condicao)
+       
+
+fimse
+fimenquanto
+fimalgoritmo

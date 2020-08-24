@@ -1,0 +1,20 @@
+Algoritmo "nomeesobrenome"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+    nome , sobrenome, resultado : caractere
+
+
+Inicio
+        escreva ("Escreva seu nome: ")
+        leia (nome)
+        escreva ("Escreva seu sobrenome: ")
+        leia (sobrenome)
+
+ resultado <- nome + " " + sobrenome
+ 
+ escreva ("  Seu nome completo é: ", resultado)
+
+
+Fimalgoritmo

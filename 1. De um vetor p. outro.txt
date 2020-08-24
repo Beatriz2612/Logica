@@ -1,0 +1,33 @@
+Algoritmo "exer1"
+
+Var
+
+   vet1: vetor [1..5] de inteiro
+   vet2: vetor [1..5] de inteiro
+   contador: inteiro
+
+Inicio
+
+      para contador de 1 ate 5 faca
+      
+  escreva("Digite o ", contador, "º numero: ")
+   leia(vet1[contador])
+
+// Para transferir os dados do vet1 para o vet2  (no caso,
+// valor) é o atribuir os valores com o símbolo: <-
+
+           vet2[contador] <- vet1[contador]
+           
+ fimpara
+ 
+  escreval("")
+  escreval("Listagem - vetor 1 e vetor 2")
+  escreval ("")
+ para contador de 1 ate 5 faca
+ 
+   escreval("vet1 = ", vet1[contador], " - ", "vet2 = ", vet2[contador])
+   
+      fimpara
+
+
+Fimalgoritmo

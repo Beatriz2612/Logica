@@ -1,0 +1,35 @@
+Algoritmo "semnome"
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+     nome : caractere
+     anoNAS, idade, mes, diaDeVida: real
+
+Inicio
+       escreva("Informe seu nome: ")
+       leia (nome)
+       escreva (nome, ", qual o ano do seu nascimento? ")
+       leia (anoNAS)
+
+// Mês = 30 pq consideramos q 1 mês completo tem 30 dias.
+// Se for considerar que 1 mes tem 30 dias o ano tera 360 dias e não 365.
+
+idade <- (2020 - anoNAS)
+mes <- 30
+
+       escreval ("Sua idade é de ", idade, " anos")
+       
+diaDeVida <- (idade * 360)
+
+       escreval(nome, ", você viveu ", diaDeVida, " dias desde que nasceu.")
+
+
+
+
+       
+
+       
+
+
+Fimalgoritmo

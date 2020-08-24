@@ -1,0 +1,34 @@
+Algoritmo "semnome"
+// Empresa que premia funcionarios que cumpre ou ultrapassem uma determinada meta
+Var
+    funcionario, meta :real
+    nome, condicao: caractere
+
+Inicio
+
+meta<- 1000
+
+enquanto (condicao <> "nao") faca
+
+        escreva("Insira o nome do colaborador: ")
+        leia (nome)
+        escreva("Informe o valor de vendas do(a) funcionario(a) ", nome, ": ")
+        leia (funcionario)
+        
+   se funcionario < meta entao
+     escreval (nome, " não ganhou!")
+     escreval("")
+ fimse
+
+   se  funcionario >= meta  entao
+     escreval (nome, " ganhou!")
+     escreval("")
+fimse
+
+escreval ("Deseja verificar outro funcionário? ")
+leia (condicao)
+escreval("")
+
+
+fimenquanto
+Fimalgoritmo

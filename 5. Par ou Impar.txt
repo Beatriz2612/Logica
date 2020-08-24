@@ -1,0 +1,33 @@
+Algoritmo "parouimpar"
+//  
+//  
+
+// Aluna: Beatriz S. Oliveira - Equipe 3
+
+Var
+     n1: inteiro
+     condicao : caractere
+
+Inicio
+
+  enquanto (condicao <> "nao") faca
+  
+       escreva (" Digite um número: ")
+       leia (n1)
+       
+ se (n1 mod 1) entao
+ 
+       escreval("o número", n1, " é IMPAR")
+fimse
+  
+ se   (n1 mod = 0)  entao
+ 
+       escreval ("o número", n1, " é PAR")
+ fimse
+ 
+          escreval ("Deseja verificar outro número? ")
+             leia (condicao)
+ 
+
+fimenquanto
+fimalgoritmo

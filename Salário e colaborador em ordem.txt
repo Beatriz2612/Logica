@@ -1,0 +1,70 @@
+Algoritmo "semnome"
+// 
+//  
+Var
+   nomes: vetor [1..10] de caractere
+   salarios: vetor[1..10] de real
+   contador, posicao, x, y : inteiro
+   nomeprocurado, t: caractere
+   t2: real
+   
+Inicio
+
+   //O usuário irá digitar os dados dos funcionários nome/salário
+   //gravando-as nos vetores.
+
+   para contador de 1 ate 10 faca
+        escreva("Digite o nome do fucionário: ")
+        leia(nomes[contador])
+        escreva("Digite o salário do ", nomes[contador], ": ")
+        leia(salarios[contador])
+                        ESCREVAL("")
+   fimpara
+   
+posicao <- 1
+   escreva("  - Digite o nome que você quer encontrar: ")
+   leia(nomeprocurado)
+   ESCREVAL("")
+   
+   //pesquisa sequencial, buscando pelo nome da pessoa
+   // e exibindo o nome e o salário
+   
+   enquanto (posicao < 10) e (nomes[posicao] <> nomeprocurado) faca
+            posicao <- posicao + 1
+   fimenquanto
+   
+ //Por que saiu da estrutura enquanto?
+   se nomeprocurado = nomes[posicao] entao
+      escreva("Nome encontrado! Salário do(a) ",nomeprocurado, " é:R$" , salarios[posicao])
+      ESCREVA("")
+      
+   senao
+        //indica que saiu, pois não encontrou o nome
+        escreva("Nome não foi encontrado!")
+        ESCREVA("")
+        
+   fimse
+   
+ESCREVAL("")
+ESCREVAL("")
+ESCREVAL("Lista de colaboradores em ordem alfabética e seus respectivos salários:")
+ESCREVAL("")
+
+para y de 1 ate 9 faca
+  para x de y + 1 ate 10 faca // x+1=10
+   se nomes[x] < nomes[y] entao      // NomeX menor q Y
+     t2 <- salarios[x]               // atribuindo ao t2 os salário para serem organizados junto com os nomes
+     t <- nomes[x]                   // atribuindo ao t todos os nomes na posição x se for <
+     salarios[x] <- salarios[y]      // salário segue o msm princípio
+     salarios[y] <- t2
+     nomes[x] <- nomes[y]
+     nomes[y] <- t
+   fimse
+  fimpara
+fimpara
+
+    para y de 1 ate 10 faca
+    escreval(nomes[y], " recebe: R$", salarios[y])
+    ESCREVAL("")
+    fimpara
+Fimalgoritmo

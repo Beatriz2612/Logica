@@ -1,0 +1,67 @@
+Algoritmo "semnome"
+
+
+Var
+   vet1  :   vetor [1..5]  de inteiro
+   vet2  :   vetor [1..5]  de inteiro
+   vet3  :   vetor [1..10] de inteiro
+vet_soma :   vetor [1..5]  de inteiro
+contador :   inteiro
+
+Inicio
+
+// Coletando valores para vet1
+
+         para contador de 1 ate 5 faca
+            escreva ("Insira o",contador,"º valor para o Vetor1: ")
+             leia (vet1[contador])
+
+// vetor2 passa a ter os mesmos valores do vet1
+
+vet2[contador] <- vet1[contador]
+
+
+fimpara
+
+escreval("")
+
+// Parte que mostra os valores o vet1 e o vet2 juntos (com os mesmos valores)
+
+           para contador de 1 ate 5 faca
+              escreval(" Vetor1:", vet1[contador])
+              
+fimpara
+
+escreval("")
+
+            para contador de 1 ate 5 faca
+               escreval(" Vetor2: ", vet2[contador])
+
+fimpara
+
+// Passando os dados de valores do vetor1 com o vetor2 para o vetor3
+
+
+   para contador de 1 ate 5 faca
+
+
+         vet3[contador] <- vet1[contador]
+         
+// +5 pq o vetor foi contabililado do [1..5] e o "contador: inteiro" é como se valesse 1
+// se fosse [0..4] seria +6
+
+         vet3[contador+5] <- vet2[contador]
+
+
+fimpara
+
+
+ //  Mostrando os valores que o vetor 3 recebeu
+ 
+escreval("")
+              para contador de 1 ate 10 faca
+                  escreval(" Vetor 3: ",vet3[contador])
+      
+fimpara
+
+Fimalgoritmo
