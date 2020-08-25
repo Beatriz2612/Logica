@@ -8,14 +8,14 @@ Var
     
 Inicio
 
-       escreva ("Informe o número da sua conta bancaria: ")
+       escreva ("Informe o nÃºmero da sua conta bancaria: ")
        leia (nconta)
-       escreva ("Informe o saldo disponivel da sua conta: ")
+       escreva ("Informe o saldo da sua conta: ")
        leia (saldo)
-       escreval ("Insira em letras minúsculas e sem pontuação, ")
-       escreval ("qual o tipo de operação deseja (deposito ou retirada)? ")
+       escreval ("Insira em letras minÃºsculas e sem pontuaÃ§Ã£o, ")
+       escreval ("qual o tipo de operaÃ§Ã£o deseja (deposito ou retirada)? ")
        leia (toperacao)
-       escreva ("E qual o valor da operação? ")
+       escreva ("E qual o valor da operaÃ§Ã£o? ")
        leia (valoroperacao1)
        
 somad <-   (saldo + valoroperacao1)
@@ -30,7 +30,7 @@ subtrar <- (saldo - valoroperacao1)
 fimse
 
  se (toperacao = "deposito") e (somad >= 0)  entao
-     escreva ("Operação finalizada!")
+     escreva ("OperaÃ§Ã£o finalizada!")
 
  fimalgoritmo
  
@@ -47,7 +47,7 @@ fimse
      escreval ("Conta estourada!")
  
  senao (valoroperacao1 < saldo)  entao
-     escreval ("Operação finalizada!")
+     escreval ("OperaÃ§Ã£o finalizada!")
 
 fimse
 
