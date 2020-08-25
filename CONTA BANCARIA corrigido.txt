@@ -8,7 +8,7 @@ Var
     
 Inicio
 
-       escreva ("Informe o número da sua conta bancaria: ")
+       escreva ("Informe o número da sua conta bancária: ")
        leia (nconta)
        escreva ("Informe o saldo da sua conta: ")
        leia (saldo)
