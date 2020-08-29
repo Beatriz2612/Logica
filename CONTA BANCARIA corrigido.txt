@@ -8,10 +8,12 @@ Var
     
 Inicio
 
-       escreva ("Informe o número da sua conta bancária: ")
+       escreva ("Informe o número da sua conta bancaria: ")
        leia (nconta)
+       ESCREVAL("")
        escreva ("Informe o saldo da sua conta: ")
        leia (saldo)
+       ESCREVAL("")
        escreval ("Insira em letras minúsculas e sem pontuação, ")
        escreval ("qual o tipo de operação deseja (deposito ou retirada)? ")
        leia (toperacao)
@@ -28,6 +30,16 @@ subtrar <- (saldo - valoroperacao1)
       escreval ("Seu saldo foi atualizado para ", subtrar, " reais")
       
 fimse
+                      //DEPÓSITO
+                      
+//Se o saldo atual da pessoa for positivo e ela fizer um depósito imprima a seguinte msg:
+//"Operação finalizada!"
+                             // OU
+                             
+// Se o saldo atual da pessoa for negativo (saldo negativado / devedor ) e o valor do
+//depósito superar esse valor (O SALDO FINAL TERMINAR POSITIVO) imprima a seguinte msg:
+//Operação finalizada!"
+
 
  se (toperacao = "deposito") e (somad >= 0)  entao
      escreva ("Operação finalizada!")
@@ -35,17 +47,37 @@ fimse
  fimalgoritmo
  
  fimse
-     
+ 
+// Se o saldo atual da pessoa for negativo (saldo negativado / devedor ) e o valor do
+//depósito não ultrapassar esse valor (saldo final continuar NEGATIVO) imprima a seguinte msg:
+//"Conta estourada!"
+
+
  se (toperacao = "deposito") ou (somad <= 0 ) entao
      escreva ("Conta estourada!")
 
 fimalgoritmo
 
 fimse
+                    //RETIRADA
+                    
+//  Se o saldo atual da pessoa for negativo (saldo negativado / devedor ) e ela optar por fazer
+//  um saque/retirada imprima a seguinte msg "Conta estourada!"
+
+                   //  OU
+                   
+//  Se o saldo atual da pessoa for positivo e ela optar por fazer um saque/retirada e esse
+//valor exceder o valor disponivel (saldo positivo) imprima a seguinte msg "Conta estourada!"
+                   
 
  se  (valoroperacao1 > saldo) entao
      escreval ("Conta estourada!")
  
+ 
+//Se o saldo atual da pessoa for positivo e ela optar por fazer um saque/retirada e esse valor
+//não ultrapassar o valor disponivel(positivo) imprima a seguinte msg "Operação finalizada!"
+
+
  senao (valoroperacao1 < saldo)  entao
      escreval ("Operação finalizada!")
 
